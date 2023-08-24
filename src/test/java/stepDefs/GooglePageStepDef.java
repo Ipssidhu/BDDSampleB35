@@ -31,6 +31,19 @@ public class GooglePageStepDef {
 	@Then("Should display Java result page")
 	public void should_display_java_result_page() {
 		String strTitle = driver.getTitle(); 
-		Assert.assertEquals(strTitle, "Java Tutorial - Google Search ");
+		Assert.assertEquals(strTitle, "Java Tutorial - Google Search");
 	}
+	
+	@When("I search Selenium Tutorial")
+	public void i_search_Selenium_tutorial() {
+		WebElement srcBox= driver.findElement(By.name("q"));
+		srcBox.sendKeys("Selenium Tutorial");
+		srcBox.submit();
+	}
+	
+	@Then("Should display Selenium result page")
+	  public void should_display_Selenium_result_page() {
+		String strTitle = driver.getTitle(); 
+		Assert.assertEquals(strTitle, "Selenium Tutorial - Google Search");
+	} 
 }
