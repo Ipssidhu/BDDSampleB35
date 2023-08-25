@@ -3,6 +3,7 @@ package stepDefs;
 import static org.testng.Assert.assertTrue;
 import java.time.Duration;
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -36,16 +37,28 @@ public class UserStepDef {
 //		driver.findElement(By.id("password")).sendKeys(strPwd);
 //		driver.findElement(By.xpath("//i[@class='fa fa-2x fa-sign-in']")).click();
 //	}
+	// using data-table as a list
+//	@When("Unser enter credentials")
+//	public void unser_enter_credentials(DataTable dataTable) {
+//		List <List<String>> data = dataTable.asLists();
+//		String strUsr = data.get(0).get(0);
+//		String strPwd = data.get(0).get(1);
+//		driver.findElement(By.id("username")).sendKeys(strUsr);
+//		driver.findElement(By.id("password")).sendKeys(strPwd);
+//		driver.findElement(By.xpath("//i[@class='fa fa-2x fa-sign-in']")).click();   
+//	}
 	
+	// using data-table as Map
 	@When("Unser enter credentials")
 	public void unser_enter_credentials(DataTable dataTable) {
-		List <List<String>> data = dataTable.asLists();
-		String strUsr = data.get(0).get(0);
-		String strPwd = data.get(0).get(1);
+		List<Map<String, String>>data =dataTable.asMaps();
+		System.out.println("List size is.."+data.size());
+		String strUsr = data.get(0).get("username");
+		String strPwd = data.get(0).get("password");
 		driver.findElement(By.id("username")).sendKeys(strUsr);
 		driver.findElement(By.id("password")).sendKeys(strPwd);
-		driver.findElement(By.xpath("//i[@class='fa fa-2x fa-sign-in']")).click();
-	    
+		driver.findElement(By.xpath("//i[@class='fa fa-2x fa-sign-in']")).click(); 
+		
 	}
 	
 	@Then("User should be navigated to HomePage")

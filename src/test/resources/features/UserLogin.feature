@@ -3,8 +3,9 @@ Feature: Login function
 Scenario: Valid Login
 Given User is on Login Page
 When Unser enter credentials
+		| username | password |
 	   | tomsmith | SuperSecretPassword! |
-#	   |testuser 1 | welcome 123 |
+     |testuser 1 | welcome 123 |
 Then User should be navigated to HomePage
 
 #Scenario: Valid Login
