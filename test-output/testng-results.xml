@@ -1,76 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-24T07:45:53 GMT" name="Default suite" finished-at="2023-08-24T07:46:11 GMT" duration-ms="18021">
+  <suite started-at="2023-08-25T04:57:01 GMT" name="Default suite" finished-at="2023-08-25T04:57:10 GMT" duration-ms="9179">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyTestRunner@17f9d882]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyTestRunner@79e4c792]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-08-24T07:45:53 GMT" name="Default test" finished-at="2023-08-24T07:46:11 GMT" duration-ms="18021">
+    <test started-at="2023-08-25T04:57:01 GMT" name="Default test" finished-at="2023-08-25T04:57:10 GMT" duration-ms="9179">
       <class name="runners.MyTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.MyTestRunner@17f9d882]" started-at="2023-08-24T07:45:53 GMT" name="setUpClass" finished-at="2023-08-24T07:45:54 GMT" duration-ms="1069" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.MyTestRunner@79e4c792]" started-at="2023-08-25T04:57:01 GMT" name="setUpClass" finished-at="2023-08-25T04:57:02 GMT" duration-ms="936" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6987a133]]>
+                <![CDATA[org.testng.TestRunner@7a9ceddf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyTestRunner@17f9d882]" started-at="2023-08-24T07:45:54 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-24T07:46:02 GMT" duration-ms="7945" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyTestRunner@79e4c792]" started-at="2023-08-25T04:57:02 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-25T04:57:09 GMT" duration-ms="6835" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Search Java Tutorial"]]>
+                <![CDATA["Valid Login"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Google Page Search function"]]>
+                <![CDATA["Login function"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyTestRunner@17f9d882]" started-at="2023-08-24T07:46:02 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-24T07:46:09 GMT" duration-ms="7046" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search Selenium Tutorial"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Google Page Search function"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Selenium Tutorial - Google Search Page] but found [Selenium Tutorial - Google Search]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Selenium Tutorial - Google Search Page] but found [Selenium Tutorial - Google Search]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at stepDefs.GooglePageStepDef.should_display_Selenium_result_page(GooglePageStepDef.java:53)
-at ✽.Should display Selenium result page(file:///C:/SJJ/src/test/resources/features/GooglePageSearch.feature:11)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.MyTestRunner@17f9d882]" started-at="2023-08-24T07:46:09 GMT" name="tearDownClass" finished-at="2023-08-24T07:46:11 GMT" duration-ms="1891" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.MyTestRunner@79e4c792]" started-at="2023-08-25T04:57:09 GMT" name="tearDownClass" finished-at="2023-08-25T04:57:10 GMT" duration-ms="1313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
