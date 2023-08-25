@@ -1,3 +1,4 @@
+@PhaseOne
 Feature: Tasks Management
 
 @SmokeTest

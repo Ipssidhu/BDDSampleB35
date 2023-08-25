@@ -1,6 +1,7 @@
+@PhaseTwo
 Feature: Contacts Management
 
-@SmokeTest
+@SmokeTest #@RegressionTest
 Scenario: Create a contact
 Given User is CRM Home Page
 When User create a new contact

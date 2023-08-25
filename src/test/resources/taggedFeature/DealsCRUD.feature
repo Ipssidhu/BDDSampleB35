@@ -1,3 +1,4 @@
+@PhaseOne
 Feature: Deals Management
 
 @SmokeTest
