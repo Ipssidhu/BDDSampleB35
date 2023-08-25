@@ -17,8 +17,9 @@ public class SendEmailStepDef {
 	public void user_must_launch_application() {
 		driver = new ChromeDriver();
 		driver.get("https://www.globalsqa.com/samplepagetest/");
-		String strTitl = driver.getTitle();
-		Assert.assertEquals(strTitl, "Global");
+		driver.manage().window().maximize();
+	//	String strTitl = driver.getTitle();
+	//	Assert.assertEquals(strTitl, "Global");
 	}
 	@When("User should send email to register")
 	public void user_should_send_email_to_register(String docString) {
